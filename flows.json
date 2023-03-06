@@ -1,0 +1,4619 @@
+[
+    {
+        "id": "ea99029616886313",
+        "type": "tab",
+        "label": "Theme",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e15e5e2d5620a14b",
+        "type": "tab",
+        "label": "President Office",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "09e8989193d87a0e",
+        "type": "tab",
+        "label": "Central Control Room",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "53695aa34af82441",
+        "type": "tab",
+        "label": "Confidential Document Room",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f02b86421d01e2b2",
+        "type": "mqtt-broker",
+        "name": "CE mqtt service",
+        "broker": "172.17.0.2",
+        "port": "8883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "a87911ded0db32b4",
+        "type": "ui_tab",
+        "name": "President's Office",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a59ec09267ad8413",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Pentagon",
+                "default": "#4B7930",
+                "baseColor": "#4294a9",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "PENTOGON | Security Dashboard",
+            "hideToolbar": "true",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 24,
+                "gy": 24,
+                "cx": 5,
+                "cy": 5,
+                "px": 1,
+                "py": 1
+            }
+        }
+    },
+    {
+        "id": "f994a82b669d3328",
+        "type": "ui_tab",
+        "name": "Confidential Document Room",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "034e09075bbca799",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "4f5544e0023329c9",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5520049b791f99ab",
+        "type": "ui_group",
+        "name": "Tab",
+        "tab": "a87911ded0db32b4",
+        "order": 1,
+        "disp": false,
+        "width": 22,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "353a3e2e2f5fa3c9",
+        "type": "ui_group",
+        "name": "Tab",
+        "tab": "f994a82b669d3328",
+        "order": 1,
+        "disp": false,
+        "width": 22,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5065af3659a25063",
+        "type": "ui_tab",
+        "name": "Central Control Room",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ea9e810cfc2e85fc",
+        "type": "ui_group",
+        "name": "Tab",
+        "tab": "5065af3659a25063",
+        "order": 1,
+        "disp": false,
+        "width": 22,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "56d8015b0cb33558",
+        "type": "ui_group",
+        "name": "President's Office",
+        "tab": "a87911ded0db32b4",
+        "order": 2,
+        "disp": false,
+        "width": 22,
+        "collapse": false,
+        "className": "po1"
+    },
+    {
+        "id": "ae64a7ccf4ad4936",
+        "type": "ui_group",
+        "name": "Panic",
+        "tab": "a87911ded0db32b4",
+        "order": 3,
+        "disp": false,
+        "width": "11",
+        "collapse": false,
+        "className": "po3"
+    },
+    {
+        "id": "0ba7e1243daa3b34",
+        "type": "ui_group",
+        "name": "Door",
+        "tab": "a87911ded0db32b4",
+        "order": 4,
+        "disp": false,
+        "width": 10,
+        "collapse": false,
+        "className": "po2"
+    },
+    {
+        "id": "bd4c929b10a619f0",
+        "type": "ui_group",
+        "name": "Central Control Room",
+        "tab": "5065af3659a25063",
+        "order": 2,
+        "disp": false,
+        "width": "22",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9611723b56a40d4b",
+        "type": "ui_group",
+        "name": "President's Office",
+        "tab": "5065af3659a25063",
+        "order": 3,
+        "disp": false,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d0f6d576f8c1c2ba",
+        "type": "ui_group",
+        "name": "Confidential Document Room",
+        "tab": "5065af3659a25063",
+        "order": 4,
+        "disp": false,
+        "width": 15,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "aa95d411e3540769",
+        "type": "ui_group",
+        "name": "Temperature",
+        "tab": "f994a82b669d3328",
+        "order": 2,
+        "disp": false,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "81870d1085a881fc",
+        "type": "ui_group",
+        "name": "Light Intensity",
+        "tab": "f994a82b669d3328",
+        "order": 4,
+        "disp": false,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "26886c0f74f50cdc",
+        "type": "ui_group",
+        "name": "Flow pressure",
+        "tab": "f994a82b669d3328",
+        "order": 3,
+        "disp": false,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6e84f5d46f9a53ff",
+        "type": "ui_group",
+        "name": "Confidential Document Room",
+        "tab": "f994a82b669d3328",
+        "order": 6,
+        "disp": false,
+        "width": "22",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "750859b8200b4028",
+        "type": "ui_spacer",
+        "z": "e15e5e2d5620a14b",
+        "name": "spacer",
+        "group": "56d8015b0cb33558",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "fb66be56c7599f89",
+        "type": "ui_spacer",
+        "z": "e15e5e2d5620a14b",
+        "name": "spacer",
+        "group": "56d8015b0cb33558",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3c034b44d64ae770",
+        "type": "ui_spacer",
+        "z": "e15e5e2d5620a14b",
+        "name": "spacer",
+        "group": "56d8015b0cb33558",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7618b670c230deae",
+        "type": "ui_spacer",
+        "z": "e15e5e2d5620a14b",
+        "name": "spacer",
+        "group": "56d8015b0cb33558",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d086a0f32578fa84",
+        "type": "ui_spacer",
+        "z": "e15e5e2d5620a14b",
+        "name": "spacer",
+        "group": "56d8015b0cb33558",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "10903670df9c66b3",
+        "type": "ui_spacer",
+        "z": "e15e5e2d5620a14b",
+        "name": "spacer",
+        "group": "56d8015b0cb33558",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c1cb0db1713369a6",
+        "type": "ui_spacer",
+        "z": "e15e5e2d5620a14b",
+        "name": "spacer",
+        "group": "56d8015b0cb33558",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e4416f682d5eb37d",
+        "type": "ui_spacer",
+        "z": "e15e5e2d5620a14b",
+        "name": "spacer",
+        "group": "56d8015b0cb33558",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2539b9e55b64f1e1",
+        "type": "ui_spacer",
+        "z": "e15e5e2d5620a14b",
+        "name": "spacer",
+        "group": "56d8015b0cb33558",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2cc1f2f71e6b935c",
+        "type": "ui_spacer",
+        "z": "e15e5e2d5620a14b",
+        "name": "spacer",
+        "group": "56d8015b0cb33558",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0fffb45e91e5c910",
+        "type": "ui_spacer",
+        "z": "e15e5e2d5620a14b",
+        "name": "spacer",
+        "group": "ae64a7ccf4ad4936",
+        "order": 1,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "1cacf9c008c16e92",
+        "type": "ui_spacer",
+        "z": "e15e5e2d5620a14b",
+        "name": "spacer",
+        "group": "ae64a7ccf4ad4936",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "25a202c048af7d69",
+        "type": "ui_spacer",
+        "z": "e15e5e2d5620a14b",
+        "name": "spacer",
+        "group": "ae64a7ccf4ad4936",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "91767e5e4d6e6f83",
+        "type": "ui_spacer",
+        "z": "e15e5e2d5620a14b",
+        "name": "spacer",
+        "group": "ae64a7ccf4ad4936",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c12fde57ca735b2a",
+        "type": "ui_spacer",
+        "z": "e15e5e2d5620a14b",
+        "name": "spacer",
+        "group": "0ba7e1243daa3b34",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "78cef512201194e8",
+        "type": "ui_spacer",
+        "z": "e15e5e2d5620a14b",
+        "name": "spacer",
+        "group": "0ba7e1243daa3b34",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8e42a4af1dcb6f92",
+        "type": "ui_spacer",
+        "z": "e15e5e2d5620a14b",
+        "name": "spacer",
+        "group": "0ba7e1243daa3b34",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "4796e2650e07dbbc",
+        "type": "ui_spacer",
+        "z": "e15e5e2d5620a14b",
+        "name": "spacer",
+        "group": "0ba7e1243daa3b34",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "55411b5c5f362f4f",
+        "type": "ui_spacer",
+        "z": "e15e5e2d5620a14b",
+        "name": "spacer",
+        "group": "0ba7e1243daa3b34",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "18c754808883935d",
+        "type": "ui_spacer",
+        "z": "e15e5e2d5620a14b",
+        "name": "spacer",
+        "group": "0ba7e1243daa3b34",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "374614e32f8f8376",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "bd4c929b10a619f0",
+        "order": 1,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "fc7d9b6172a8f18b",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "bd4c929b10a619f0",
+        "order": 3,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "36a613cd323c4916",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "bd4c929b10a619f0",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3537608f3349e1cf",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "bd4c929b10a619f0",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a7668a8dd587ee2e",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "bd4c929b10a619f0",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "bf316e51d51ea49f",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "bd4c929b10a619f0",
+        "order": 10,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "6345d6c94030f3dd",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "bd4c929b10a619f0",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "fd32a2671ac7bbf1",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "bd4c929b10a619f0",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f7f9250186592769",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "bd4c929b10a619f0",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "55c305fdd2fada2d",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "bd4c929b10a619f0",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "867ef1f1272c62a8",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "bd4c929b10a619f0",
+        "order": 16,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "8e036585144b2a85",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "bd4c929b10a619f0",
+        "order": 17,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b1633805becf0854",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "bd4c929b10a619f0",
+        "order": 19,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9786510274cfef36",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "bd4c929b10a619f0",
+        "order": 21,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8b1b09d4f48582fc",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "bd4c929b10a619f0",
+        "order": 22,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "1b1c93b0006fe406",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "bd4c929b10a619f0",
+        "order": 24,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "cf6f2437662d1e3d",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "aa95d411e3540769",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a89a99718d6cc4bc",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "aa95d411e3540769",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "fe2dadd614d05733",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "aa95d411e3540769",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e5b61538acfb8d0d",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "aa95d411e3540769",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a2366f3a85ed88b3",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "aa95d411e3540769",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "1cbdb152285d7d77",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "aa95d411e3540769",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "fdf5d1ab98276c8c",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "aa95d411e3540769",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e20a7ad5d7df1ce8",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "aa95d411e3540769",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "db3e2f8666cede6e",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "aa95d411e3540769",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3458cc84297e8cfc",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "aa95d411e3540769",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "46ca2ef651fdc11b",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "aa95d411e3540769",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "50660834a9fa5a78",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "aa95d411e3540769",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "df4e559df1fe6c6c",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "aa95d411e3540769",
+        "order": 16,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "466e5a6c52dd3a42",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "aa95d411e3540769",
+        "order": 17,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c320f6d82595b39f",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "aa95d411e3540769",
+        "order": 18,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0e64ba043f8ff50f",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "aa95d411e3540769",
+        "order": 19,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c946f2e21bc0a5a8",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "26886c0f74f50cdc",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0413daccb645c56d",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "26886c0f74f50cdc",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b1a660c4dbcfa414",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "26886c0f74f50cdc",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "683fc11ea1ba96fb",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "26886c0f74f50cdc",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "387d0f0b3e1b475e",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "26886c0f74f50cdc",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "124f00a80e38aa34",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "26886c0f74f50cdc",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f893e9a07c3ff484",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "26886c0f74f50cdc",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "26e7cd9ad5aed5a0",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "26886c0f74f50cdc",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6a4d1fd13ab08ed4",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "81870d1085a881fc",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e26bb6cd73a75a4f",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "81870d1085a881fc",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c8e4f4cbfda27644",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "81870d1085a881fc",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7ef6895b1f31a689",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "81870d1085a881fc",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ebb68bf50b1fea6d",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "81870d1085a881fc",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7385469dc97ffd73",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "81870d1085a881fc",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ce66f400262889f1",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "81870d1085a881fc",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "04d40a85323dac22",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "81870d1085a881fc",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b0c2bbc6b22c9b9a",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "81870d1085a881fc",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d2e77dbd377b17f0",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "81870d1085a881fc",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8ffe6b549b3de6cf",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "81870d1085a881fc",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "63f41ac1c18ae614",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "81870d1085a881fc",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e50b1c542416e267",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "81870d1085a881fc",
+        "order": 16,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "06c7ac41ec7d249f",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "81870d1085a881fc",
+        "order": 17,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c81f5ab80c60aa85",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "81870d1085a881fc",
+        "order": 18,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "02c4e97fb28fe7a0",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "81870d1085a881fc",
+        "order": 19,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0c7e1ea846ea48f8",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "6e84f5d46f9a53ff",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "85df68fd928de8c5",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "6e84f5d46f9a53ff",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "83f18909f1514d83",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "6e84f5d46f9a53ff",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "11b0b780894c59d9",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "6e84f5d46f9a53ff",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b6c309221fd982f5",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "6e84f5d46f9a53ff",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6530029d30167419",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "6e84f5d46f9a53ff",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3ee75f14975941b6",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "6e84f5d46f9a53ff",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ea6abf59e438f738",
+        "type": "ui_spacer",
+        "z": "ea99029616886313",
+        "name": "spacer",
+        "group": "6e84f5d46f9a53ff",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "182ca52d3795ec34",
+        "type": "inject",
+        "z": "ea99029616886313",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Time",
+        "payloadType": "date",
+        "x": 350,
+        "y": 320,
+        "wires": [
+            [
+                "789127f6a5f3bd44"
+            ]
+        ]
+    },
+    {
+        "id": "789127f6a5f3bd44",
+        "type": "moment",
+        "z": "ea99029616886313",
+        "name": "",
+        "topic": "",
+        "input": "",
+        "inputType": "msg",
+        "inTz": "Africa/Abidjan",
+        "adjAmount": 0,
+        "adjType": "days",
+        "adjDir": "add",
+        "format": "llll",
+        "locale": "en-US",
+        "output": "",
+        "outputType": "msg",
+        "outTz": "Asia/Colombo",
+        "x": 560,
+        "y": 320,
+        "wires": [
+            [
+                "6ad79e37da5f71b6",
+                "52b99a78f5b33cf7",
+                "89760aa46c559cb0"
+            ]
+        ]
+    },
+    {
+        "id": "6ad79e37da5f71b6",
+        "type": "ui_text_input",
+        "z": "ea99029616886313",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "5520049b791f99ab",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 770,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "52b99a78f5b33cf7",
+        "type": "ui_text_input",
+        "z": "ea99029616886313",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "353a3e2e2f5fa3c9",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 770,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4b39f7c6c0d9a185",
+        "type": "ui_button",
+        "z": "ea99029616886313",
+        "name": "",
+        "group": "5520049b791f99ab",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "< Central Control Room",
+        "tooltip": "Back to Control Room",
+        "color": "Black",
+        "bgcolor": "White",
+        "className": "",
+        "icon": "",
+        "payload": "{ \"tab\": \"Central Control Room\" }",
+        "payloadType": "json",
+        "topic": "po",
+        "topicType": "msg",
+        "x": 350,
+        "y": 480,
+        "wires": [
+            [
+                "5dc7518f7e0a1bbc"
+            ]
+        ]
+    },
+    {
+        "id": "cba03d4f380dc68b",
+        "type": "ui_button",
+        "z": "ea99029616886313",
+        "name": "",
+        "group": "353a3e2e2f5fa3c9",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "< Central Control Room",
+        "tooltip": "Back to Control Room",
+        "color": "Black",
+        "bgcolor": "White",
+        "className": "",
+        "icon": "",
+        "payload": "{ \"tab\": \"Central Control Room\" }",
+        "payloadType": "json",
+        "topic": "po",
+        "topicType": "msg",
+        "x": 350,
+        "y": 520,
+        "wires": [
+            [
+                "5dc7518f7e0a1bbc"
+            ]
+        ]
+    },
+    {
+        "id": "b20e558201fc9855",
+        "type": "ui_button",
+        "z": "ea99029616886313",
+        "name": "",
+        "group": "ea9e810cfc2e85fc",
+        "order": 2,
+        "width": 7,
+        "height": 1,
+        "passthru": false,
+        "label": "President's Office",
+        "tooltip": "Click to go President Office",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{ \"tab\": \"President's Office\" }",
+        "payloadType": "json",
+        "topic": "po",
+        "topicType": "msg",
+        "x": 330,
+        "y": 580,
+        "wires": [
+            [
+                "5dc7518f7e0a1bbc"
+            ]
+        ]
+    },
+    {
+        "id": "3c4dc221955a7241",
+        "type": "ui_button",
+        "z": "ea99029616886313",
+        "name": "",
+        "group": "ea9e810cfc2e85fc",
+        "order": 4,
+        "width": 7,
+        "height": 1,
+        "passthru": false,
+        "label": "Confidential Document Room",
+        "tooltip": "Click to go Confidential Document Room",
+        "color": "",
+        "bgcolor": "",
+        "className": "C_D_R",
+        "icon": "",
+        "payload": "{ \"tab\": \"Confidential Document Room\" }",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 360,
+        "y": 680,
+        "wires": [
+            [
+                "5dc7518f7e0a1bbc"
+            ]
+        ]
+    },
+    {
+        "id": "5dc7518f7e0a1bbc",
+        "type": "ui_ui_control",
+        "z": "ea99029616886313",
+        "name": "",
+        "events": "all",
+        "x": 680,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "89760aa46c559cb0",
+        "type": "ui_text_input",
+        "z": "ea99029616886313",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "ea9e810cfc2e85fc",
+        "order": 3,
+        "width": 8,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 770,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f6b93147aee26cec",
+        "type": "ui_button",
+        "z": "ea99029616886313",
+        "name": "President's Office",
+        "group": "5520049b791f99ab",
+        "order": 1,
+        "width": 16,
+        "height": 2,
+        "passthru": false,
+        "label": "<font size=5>President's Office",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "P_O",
+        "icon": "",
+        "payload": "PRESIDENT'S OFFICE",
+        "payloadType": "str",
+        "topic": "po",
+        "topicType": "msg",
+        "x": 330,
+        "y": 620,
+        "wires": [
+            [
+                "5dc7518f7e0a1bbc"
+            ]
+        ]
+    },
+    {
+        "id": "4bd29622e2bfb1fd",
+        "type": "ui_button",
+        "z": "ea99029616886313",
+        "name": "Confidential Document Room",
+        "group": "353a3e2e2f5fa3c9",
+        "order": 1,
+        "width": 16,
+        "height": 2,
+        "passthru": false,
+        "label": "<font size=5>Confidential Document Room",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "C_D_R",
+        "icon": "",
+        "payload": "CONFIDENTIAL DOCUMENT ROOM",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 360,
+        "y": 720,
+        "wires": [
+            [
+                "5dc7518f7e0a1bbc"
+            ]
+        ]
+    },
+    {
+        "id": "029fac0e66358820",
+        "type": "ui_template",
+        "z": "ea99029616886313",
+        "group": "5520049b791f99ab",
+        "name": "P_O",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    body {\n        background-image: url(\"https://cdn1.epicgames.com/ue/product/Screenshot/1-1920x1080-57b782477ee4808f8b2a4ebb1ddf8ff5.jpg?resize=1&w=1920\");\n        background-repeat: no-repeat;\n        background-position: center;\n        background-size: 100%;\n        background-color: transparent;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 270,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f44d5f8f9ca98efd",
+        "type": "ui_template",
+        "z": "ea99029616886313",
+        "group": "353a3e2e2f5fa3c9",
+        "name": "C_D_R",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    body {\n        background-image: url(\"https://cdn1.epicgames.com/ue/product/Screenshot/QAOfficescreenshot15-1920x1080-742c91bc4b0301703ffbcf3d1e45eedd.jpg?resize=1&w=1920\");\n        background-repeat: no-repeat;\n        background-position: center;\n        background-size: 100%;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 840,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "488ba3fd8c32acc8",
+        "type": "ui_template",
+        "z": "ea99029616886313",
+        "group": "ea9e810cfc2e85fc",
+        "name": "C_C_R",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    body {\n        background-image: url(\"https://cdn1.epicgames.com/ue/product/Screenshot/HighresScreenshot00002-1920x1080-a2295c25d8be1bf0adf9d3450325c740.jpg?resize=1&w=1920\");\n        background-repeat: no-repeat;\n        background-position: center;\n        background-size: 100%;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 560,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cd383f2851ddf78c",
+        "type": "ui_button",
+        "z": "ea99029616886313",
+        "name": "Central Control Room",
+        "group": "ea9e810cfc2e85fc",
+        "order": 1,
+        "width": 22,
+        "height": 1,
+        "passthru": false,
+        "label": "<font size=5>Central Control Room",
+        "tooltip": "",
+        "color": "Black",
+        "bgcolor": "White",
+        "className": "C_C_R",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "po",
+        "topicType": "msg",
+        "x": 340,
+        "y": 440,
+        "wires": [
+            [
+                "5dc7518f7e0a1bbc"
+            ]
+        ]
+    },
+    {
+        "id": "877e619f4ca960a0",
+        "type": "ui_template",
+        "z": "ea99029616886313",
+        "group": "5520049b791f99ab",
+        "name": "PO",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\nbody, html {\n\n}\n.nr-dashboard-theme .nr-dashboard-button .md-button {\n    border-radius: 10px !important;\n}\n\n.masonry-container > .visible {\n    border-radius: 10px  !important;\n    background-color: rgba(51,51,60,0.85) !important;\n}\n\nbody.nr-dashboard-theme md-content md-card {\n    background-color: transparent !important;\n}\n\n.nr-dashboard-theme ui-card-panel p {\n    text-align: center !important;\n}\n\n.nr-dashboard-theme  {\n    background-color: transparent !important;\n}\n\n.nr-dashboard-theme ui-card-panel p {\n    font-size: 22px !important;\n}\n.md-dialog-content{\n  animation: animate 0.5s linear infinite;\n } \n  \n @keyframes animate{\n   0%{\n     opacity: 0;\n   }\n   50%{\n     opacity: 0.6;\n   }\n   100%{\n     opacity: 0;\n   }\n }\n}\n\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 270,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0376c4e54b2483fc",
+        "type": "ui_template",
+        "z": "ea99029616886313",
+        "group": "353a3e2e2f5fa3c9",
+        "name": "CDR",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\nbody, html {\n\n}\n.nr-dashboard-theme .nr-dashboard-button .md-button {\n    border-radius: 10px !important;\n}\n\n.masonry-container > .visible {\n    border-radius: 10px  !important;\n    background-color: rgba(51,51,60,0.9) !important;\n}\n\nbody.nr-dashboard-theme md-content md-card {\n    background-color: transparent !important;\n}\n\n.nr-dashboard-theme ui-card-panel p {\n    text-align: center !important;\n}\n\n.nr-dashboard-theme  {\n    background-color: transparent !important;\n}\n\n.nr-dashboard-theme ui-card-panel p {\n    font-size: 22px !important;\n}\n\n}\n\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 830,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6a0d2eb42af93d67",
+        "type": "ui_template",
+        "z": "ea99029616886313",
+        "group": "ea9e810cfc2e85fc",
+        "name": "CCR",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\nbody, html {\n\n}\n.nr-dashboard-theme .nr-dashboard-button .md-button {\n    border-radius: 10px !important;\n}\n\n.masonry-container > .visible {\n    border-radius: 10px  !important;\n    background-color: rgba(51,51,60,0.86) !important;\n}\n\nbody.nr-dashboard-theme md-content md-card {\n    background-color: transparent !important;\n}\n\n.nr-dashboard-theme ui-card-panel p {\n    text-align: center !important;\n}\n\n.nr-dashboard-theme  {\n    background-color: transparent !important;\n}\n\n.nr-dashboard-theme ui-card-panel p {\n    font-size: 22px !important;\n}\n\n.md-dialog-content{\n  animation: animate 0.5s linear infinite;\n } \n  \n @keyframes animate{\n   0%{\n     opacity: 0;\n   }\n   50%{\n     opacity: 0.6;\n   }\n   100%{\n     opacity: 0;\n   }\n }\n\n   \n}\n\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 550,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a1cb23d2fe9a64b0",
+        "type": "comment",
+        "z": "ea99029616886313",
+        "name": "Theme Design",
+        "info": "",
+        "x": 580,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "6f18acf961192415",
+        "type": "comment",
+        "z": "ea99029616886313",
+        "name": "Set Date and Time",
+        "info": "",
+        "x": 330,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "b104f994d470489f",
+        "type": "comment",
+        "z": "ea99029616886313",
+        "name": "Creating Tabs for Switching Between Pages",
+        "info": "",
+        "x": 410,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "6548ef1e60b29478",
+        "type": "debug",
+        "z": "e15e5e2d5620a14b",
+        "name": "Temp_B",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "1bb9f17a079f1556",
+        "type": "debug",
+        "z": "e15e5e2d5620a14b",
+        "name": "Door_B",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "1283a5bafc9df4e6",
+        "type": "inject",
+        "z": "e15e5e2d5620a14b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "ACESS GRANTED",
+        "payloadType": "str",
+        "x": 250,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a38bbdd6c8ecbe1a",
+        "type": "ui_gauge",
+        "z": "e15e5e2d5620a14b",
+        "name": "",
+        "group": "56d8015b0cb33558",
+        "order": 6,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "",
+        "label": "Dgrees Celcius",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#d6cf05",
+            "#06d402",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "30",
+        "className": "",
+        "x": 1010,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "a3d03038da4d8aaf",
+        "type": "ui_chart",
+        "z": "e15e5e2d5620a14b",
+        "name": "",
+        "group": "56d8015b0cb33558",
+        "order": 8,
+        "width": 14,
+        "height": 4,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "50",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1010,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ec10c6e90fec169e",
+        "type": "mqtt in",
+        "z": "e15e5e2d5620a14b",
+        "name": "",
+        "topic": "G6B/PO/Panic_Button",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "f02b86421d01e2b2",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 260,
+        "y": 780,
+        "wires": [
+            [
+                "602631bbb893d2ff",
+                "2afd4c8d95c9170f"
+            ]
+        ]
+    },
+    {
+        "id": "602631bbb893d2ff",
+        "type": "debug",
+        "z": "e15e5e2d5620a14b",
+        "name": "Panic_B",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "86581e7043128684",
+        "type": "debug",
+        "z": "e15e5e2d5620a14b",
+        "name": "Fire_B",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1010,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "eaa68b1944c0b607",
+        "type": "inject",
+        "z": "e15e5e2d5620a14b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Pressed",
+        "payloadType": "str",
+        "x": 420,
+        "y": 840,
+        "wires": [
+            [
+                "602631bbb893d2ff"
+            ]
+        ]
+    },
+    {
+        "id": "4351513ec84675d3",
+        "type": "inject",
+        "z": "e15e5e2d5620a14b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Fire_Alert",
+        "payloadType": "str",
+        "x": 290,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ba960ba3b4ee199d",
+        "type": "ui_toast",
+        "z": "e15e5e2d5620a14b",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "Notification",
+        "topic": "ALERT",
+        "name": "Panic Button | ALERT",
+        "x": 1180,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2afd4c8d95c9170f",
+        "type": "ui_button",
+        "z": "e15e5e2d5620a14b",
+        "name": "PANIC BUTTON",
+        "group": "ae64a7ccf4ad4936",
+        "order": 3,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "label": "PANIC BUTTON",
+        "tooltip": "emergency",
+        "color": "white",
+        "bgcolor": "red",
+        "className": "emergency",
+        "icon": "report",
+        "payload": "Yes",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 620,
+        "y": 780,
+        "wires": [
+            [
+                "ae4caab52a87a846",
+                "b48e68d789ad755e",
+                "602631bbb893d2ff"
+            ]
+        ]
+    },
+    {
+        "id": "ae4caab52a87a846",
+        "type": "function",
+        "z": "e15e5e2d5620a14b",
+        "name": "",
+        "func": "if (msg.payload==\"Yes\" ){\n msg.payload=\"ALERT : REQUEST IMMEDIATE EVACUATION | PRESIDENT'S OFFICE!\";\n return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 760,
+        "wires": [
+            [
+                "ba960ba3b4ee199d",
+                "4d04f67fb976195a",
+                "3cdf92058945b6c3"
+            ]
+        ]
+    },
+    {
+        "id": "3318d8292d5628f6",
+        "type": "ui_template",
+        "z": "e15e5e2d5620a14b",
+        "group": "56d8015b0cb33558",
+        "name": "",
+        "order": 16,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n .Notification {\n  border-radius: 50%\n  background-color: white; \n}\n</style>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1340,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b48e68d789ad755e",
+        "type": "mqtt out",
+        "z": "e15e5e2d5620a14b",
+        "name": "",
+        "topic": "G6B/PO/Panic_Button_Out",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f02b86421d01e2b2",
+        "x": 1000,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "9532178b0b993d21",
+        "type": "ui_button",
+        "z": "e15e5e2d5620a14b",
+        "name": "PANIC OFF BUTTON",
+        "group": "ae64a7ccf4ad4936",
+        "order": 5,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "label": "PANIC OFF BUTTON",
+        "tooltip": "If THREAT went awy",
+        "color": "white",
+        "bgcolor": "green",
+        "className": "",
+        "icon": "report",
+        "payload": "No",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 650,
+        "y": 920,
+        "wires": [
+            [
+                "e70b8c6e55b89b65",
+                "173cc7d8e1af72a6",
+                "b48e68d789ad755e",
+                "b974d6724b752412"
+            ]
+        ]
+    },
+    {
+        "id": "e70b8c6e55b89b65",
+        "type": "function",
+        "z": "e15e5e2d5620a14b",
+        "name": "",
+        "func": "if (msg.payload==\"No\" ){\n msg.payload=\"NOW SAFE | PRESIDENT'S OFFICE!\";\n return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 920,
+        "wires": [
+            [
+                "359c067d714c37b5",
+                "adffd80698ff7ba5"
+            ]
+        ]
+    },
+    {
+        "id": "359c067d714c37b5",
+        "type": "ui_toast",
+        "z": "e15e5e2d5620a14b",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "Notification",
+        "topic": "ALERT",
+        "name": "PANIC BUTTON OFF",
+        "x": 1200,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9aba100e032c762f",
+        "type": "mqtt in",
+        "z": "e15e5e2d5620a14b",
+        "name": "",
+        "topic": "G6B/PO/Panic_OFF_Button",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "f02b86421d01e2b2",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 280,
+        "y": 920,
+        "wires": [
+            [
+                "9532178b0b993d21",
+                "f4cff4c763002bf9"
+            ]
+        ]
+    },
+    {
+        "id": "3e258892b1f9ec23",
+        "type": "ui_template",
+        "z": "e15e5e2d5620a14b",
+        "group": "ae64a7ccf4ad4936",
+        "name": "PO_style",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n.po1\n{\n  background-color:transparent; \n}\n.po2\n{\n  background-color:transparent; \n}\n.po3\n{\n  background-color:transparent; \n}\n</style>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 460,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b99ec5131aafc385",
+        "type": "ui_text",
+        "z": "e15e5e2d5620a14b",
+        "group": "0ba7e1243daa3b34",
+        "order": 2,
+        "width": 8,
+        "height": 1,
+        "name": "Door Lock Status",
+        "label": "<font size = 4>Door Lock Status  :  ",
+        "format": "<font color='red'>{{msg.payload}}</font>",
+        "layout": "row-spread",
+        "className": "Door",
+        "x": 1050,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "362e2befb1e39d69",
+        "type": "ui_text",
+        "z": "e15e5e2d5620a14b",
+        "group": "0ba7e1243daa3b34",
+        "order": 8,
+        "width": 8,
+        "height": 1,
+        "name": "Temperature Status",
+        "label": "<font size = 4>Temperature Status  :  ",
+        "format": "<font color='red'>{{msg.payload}}</font>",
+        "layout": "row-spread",
+        "className": "Door",
+        "x": 1050,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "4d04f67fb976195a",
+        "type": "ui_text",
+        "z": "e15e5e2d5620a14b",
+        "group": "ae64a7ccf4ad4936",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "Panic status",
+        "label": "",
+        "format": "<font color='red'>{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1150,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "173cc7d8e1af72a6",
+        "type": "function",
+        "z": "e15e5e2d5620a14b",
+        "name": "",
+        "func": "if (msg.payload==\"No\" ){\n msg.payload=\" \";\n return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 720,
+        "wires": [
+            [
+                "4d04f67fb976195a"
+            ]
+        ]
+    },
+    {
+        "id": "2d297554577a2f95",
+        "type": "ui_text",
+        "z": "e15e5e2d5620a14b",
+        "group": "56d8015b0cb33558",
+        "order": 4,
+        "width": 14,
+        "height": 1,
+        "name": "Variation with Time",
+        "label": "<font size=4.5>Variation with Time",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "x": 1190,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "e878d74240705f60",
+        "type": "ui_text",
+        "z": "e15e5e2d5620a14b",
+        "group": "0ba7e1243daa3b34",
+        "order": 5,
+        "width": 8,
+        "height": 1,
+        "name": "Door Lock Attempts",
+        "label": "<font size = 4>Attempts Remained  :  ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "Door",
+        "x": 1050,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "3557c895e1c9d979",
+        "type": "ui_toast",
+        "z": "e15e5e2d5620a14b",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "Notification",
+        "topic": "",
+        "name": "Fire | ALERT",
+        "x": 1210,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c75ec1c0c0e2c278",
+        "type": "function",
+        "z": "e15e5e2d5620a14b",
+        "name": "",
+        "func": "if (msg.payload==\"ALERT : An unauthorised entry attempt\" ){\n msg.payload=\"ALERT : An unauthorised entry attempt | PRESIDENT'S OFFICE!\";\n return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 340,
+        "wires": [
+            [
+                "8d8bb3f852206267"
+            ]
+        ]
+    },
+    {
+        "id": "903a37c656bb9b08",
+        "type": "function",
+        "z": "e15e5e2d5620a14b",
+        "name": "",
+        "func": "if (msg.payload==\"FIRE ALERT\" ){\n msg.payload=\"FIRE ALERT | PRESIDENT'S OFFICE!\";\n return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 580,
+        "wires": [
+            [
+                "3557c895e1c9d979"
+            ]
+        ]
+    },
+    {
+        "id": "8d8bb3f852206267",
+        "type": "ui_toast",
+        "z": "e15e5e2d5620a14b",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "Notification",
+        "topic": "",
+        "name": "Door | ALERT",
+        "x": 1260,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5a5f166df1281f3e",
+        "type": "mqtt in",
+        "z": "e15e5e2d5620a14b",
+        "name": "",
+        "topic": "G6B/PO/DATA",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "f02b86421d01e2b2",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 380,
+        "wires": [
+            [
+                "18c9d194768f40be",
+                "50a393a5eb41c864"
+            ]
+        ]
+    },
+    {
+        "id": "18c9d194768f40be",
+        "type": "split",
+        "z": "e15e5e2d5620a14b",
+        "name": "",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 420,
+        "y": 380,
+        "wires": [
+            [
+                "703c1ae27530d5b7"
+            ]
+        ]
+    },
+    {
+        "id": "703c1ae27530d5b7",
+        "type": "switch",
+        "z": "e15e5e2d5620a14b",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "index",
+                "v": "0",
+                "vt": "num",
+                "v2": "0",
+                "v2t": "num"
+            },
+            {
+                "t": "index",
+                "v": "1",
+                "vt": "num",
+                "v2": "1",
+                "v2t": "num"
+            },
+            {
+                "t": "index",
+                "v": "2",
+                "vt": "num",
+                "v2": "2",
+                "v2t": "num"
+            },
+            {
+                "t": "index",
+                "v": "3",
+                "vt": "num",
+                "v2": "3",
+                "v2t": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 550,
+        "y": 380,
+        "wires": [
+            [
+                "a38bbdd6c8ecbe1a",
+                "a3d03038da4d8aaf",
+                "6548ef1e60b29478"
+            ],
+            [
+                "b99ec5131aafc385",
+                "c75ec1c0c0e2c278",
+                "1bb9f17a079f1556"
+            ],
+            [
+                "e878d74240705f60"
+            ],
+            [
+                "362e2befb1e39d69",
+                "903a37c656bb9b08",
+                "86581e7043128684"
+            ]
+        ]
+    },
+    {
+        "id": "50a393a5eb41c864",
+        "type": "debug",
+        "z": "e15e5e2d5620a14b",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 400,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "b974d6724b752412",
+        "type": "debug",
+        "z": "e15e5e2d5620a14b",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "784e34afa0e8eb7c",
+        "type": "ui_text",
+        "z": "e15e5e2d5620a14b",
+        "group": "56d8015b0cb33558",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "name": "Temperature",
+        "label": "<font size=4.5>Temperature",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "x": 1170,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "7f278f8bc4ecd0f1",
+        "type": "ui_text",
+        "z": "e15e5e2d5620a14b",
+        "group": "56d8015b0cb33558",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Temperature Measuring System",
+        "label": "",
+        "format": "<font size=4.5>Temperature Measuring System",
+        "layout": "col-center",
+        "className": "",
+        "x": 1170,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "f4cff4c763002bf9",
+        "type": "debug",
+        "z": "e15e5e2d5620a14b",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "adffd80698ff7ba5",
+        "type": "ui_audio",
+        "z": "e15e5e2d5620a14b",
+        "name": "",
+        "group": "ae64a7ccf4ad4936",
+        "voice": "Microsoft David - English (United States)",
+        "always": "",
+        "x": 1160,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "3cdf92058945b6c3",
+        "type": "ui_audio",
+        "z": "e15e5e2d5620a14b",
+        "name": "",
+        "group": "ae64a7ccf4ad4936",
+        "voice": "Microsoft David - English (United States)",
+        "always": "",
+        "x": 1140,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "875a4334d963eeed",
+        "type": "comment",
+        "z": "e15e5e2d5620a14b",
+        "name": "Getting Data and splitting",
+        "info": "",
+        "x": 430,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "90a0dd258af3e8fc",
+        "type": "comment",
+        "z": "e15e5e2d5620a14b",
+        "name": "Connecting Panic Buttons (in Dashboard)  with Physical Buttons",
+        "info": "",
+        "x": 570,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "35d4b220fe2345ee",
+        "type": "comment",
+        "z": "e15e5e2d5620a14b",
+        "name": "President Office",
+        "info": "",
+        "x": 810,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "06e10d09dcf74776",
+        "type": "ui_button",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "group": "bd4c929b10a619f0",
+        "order": 5,
+        "width": 5,
+        "height": 1,
+        "passthru": true,
+        "label": "Emergency Lockdown",
+        "tooltip": "emergency",
+        "color": "white",
+        "bgcolor": "red",
+        "className": "emergency",
+        "icon": "report",
+        "payload": "LOCKDOWN",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 460,
+        "y": 620,
+        "wires": [
+            [
+                "4edf27ec06086223",
+                "d54334671a3f6635"
+            ]
+        ]
+    },
+    {
+        "id": "34d6a2830ee143b7",
+        "type": "ui_button",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "group": "bd4c929b10a619f0",
+        "order": 13,
+        "width": 5,
+        "height": 1,
+        "passthru": true,
+        "label": "Emergency Lockdown OFF",
+        "tooltip": "If THREAT went awy",
+        "color": "white",
+        "bgcolor": "green",
+        "className": "",
+        "icon": "report",
+        "payload": "LOCKDOWN OFF",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 440,
+        "y": 820,
+        "wires": [
+            [
+                "701ea016fbee3b62",
+                "d54334671a3f6635"
+            ]
+        ]
+    },
+    {
+        "id": "4edf27ec06086223",
+        "type": "function",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "func": "if (msg.payload==\"LOCKDOWN\" ){\n msg.payload=\"ALERT : EMERGENCY LOCKDOWN!\";\n return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 600,
+        "wires": [
+            [
+                "a5d8f5cdef5c3b1b",
+                "14430fed63c5ee41",
+                "689570ad0c29c8f5",
+                "50091935bd3939e7",
+                "7db520a32dd99fff"
+            ]
+        ]
+    },
+    {
+        "id": "14430fed63c5ee41",
+        "type": "ui_text",
+        "z": "09e8989193d87a0e",
+        "group": "bd4c929b10a619f0",
+        "order": 18,
+        "width": 0,
+        "height": 0,
+        "name": "Lockdown status",
+        "label": "",
+        "format": "<font color='red'>{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 930,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "a5d8f5cdef5c3b1b",
+        "type": "ui_toast",
+        "z": "09e8989193d87a0e",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "Notification",
+        "topic": "",
+        "name": "Emergency Lockdown | ALERT",
+        "x": 970,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d54334671a3f6635",
+        "type": "mqtt out",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "topic": "G6C/CCR/Lockdown_Button_Out",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f02b86421d01e2b2",
+        "x": 780,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "701ea016fbee3b62",
+        "type": "function",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "func": "if (msg.payload==\"LOCKDOWN OFF\" ){\n msg.payload=\"Are you sure you want to TURN OFF LOCKDOWN\";\n return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 820,
+        "wires": [
+            [
+                "5fb07d6555e717de",
+                "08cf884e188ad95e"
+            ]
+        ]
+    },
+    {
+        "id": "5fb07d6555e717de",
+        "type": "ui_toast",
+        "z": "09e8989193d87a0e",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "Cancel",
+        "raw": false,
+        "className": "Notification",
+        "topic": "",
+        "name": "Emergency Lockdown OFF | Alert",
+        "x": 980,
+        "y": 820,
+        "wires": [
+            [
+                "82ad6f76b5b3e02d"
+            ]
+        ]
+    },
+    {
+        "id": "82ad6f76b5b3e02d",
+        "type": "function",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "func": "if (msg.payload==\"OK\" ){\n msg.payload=\" \";\n return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1240,
+        "y": 820,
+        "wires": [
+            [
+                "14430fed63c5ee41",
+                "689570ad0c29c8f5",
+                "50091935bd3939e7"
+            ]
+        ]
+    },
+    {
+        "id": "38bb61f54374b894",
+        "type": "mqtt in",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "topic": "G6C/CCC/DATA",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "f02b86421d01e2b2",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 140,
+        "wires": [
+            [
+                "9b277eaa1638c96a"
+            ]
+        ]
+    },
+    {
+        "id": "65a0358ad32e2457",
+        "type": "debug",
+        "z": "09e8989193d87a0e",
+        "name": "Temp_B",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "4a5099a9ffe337de",
+        "type": "ui_gauge",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "group": "9611723b56a40d4b",
+        "order": 3,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "",
+        "label": "Dgrees Celcius",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#e7e023",
+            "#50e619",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "30",
+        "className": "",
+        "x": 730,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "a883aea78fc716b8",
+        "type": "ui_chart",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "group": "9611723b56a40d4b",
+        "order": 4,
+        "width": 6,
+        "height": 4,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "50",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 730,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2e6d924cfb7e872b",
+        "type": "ui_text",
+        "z": "09e8989193d87a0e",
+        "group": "9611723b56a40d4b",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "name": "Temperature Measuring System",
+        "label": "<font size=3.5>Temperature",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "x": 950,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "21b4f9800623ebcb",
+        "type": "ui_button",
+        "z": "09e8989193d87a0e",
+        "name": "President's Office",
+        "group": "9611723b56a40d4b",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "<font size=3.5>President's Office",
+        "tooltip": "Summery of PO",
+        "color": "Black",
+        "bgcolor": "White",
+        "className": "P_O",
+        "icon": "",
+        "payload": "{ \"tab\": \"President's Office\" }",
+        "payloadType": "json",
+        "topic": "po",
+        "topicType": "msg",
+        "x": 450,
+        "y": 980,
+        "wires": [
+            [
+                "a97352d258755352"
+            ]
+        ]
+    },
+    {
+        "id": "fe730ea1387af2ee",
+        "type": "debug",
+        "z": "09e8989193d87a0e",
+        "name": "Temp_A",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "2265ca1522e9ac77",
+        "type": "ui_gauge",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "group": "d0f6d576f8c1c2ba",
+        "order": 5,
+        "width": 5,
+        "height": 4,
+        "gtype": "gage",
+        "title": "",
+        "label": "Dgrees Celcius",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#22ec26",
+            "#ebee20",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "40",
+        "className": "",
+        "x": 630,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "f0a487863fcb5684",
+        "type": "ui_chart",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "group": "d0f6d576f8c1c2ba",
+        "order": 8,
+        "width": 5,
+        "height": 4,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "50",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 630,
+        "y": 1380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0a019c1422bffe78",
+        "type": "ui_text",
+        "z": "09e8989193d87a0e",
+        "group": "d0f6d576f8c1c2ba",
+        "order": 2,
+        "width": 5,
+        "height": 1,
+        "name": "Temperature Measuring System",
+        "label": "<font size=3.5>Temperature",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "x": 850,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "49d2fdda7d300bbe",
+        "type": "ui_button",
+        "z": "09e8989193d87a0e",
+        "name": "Confidential Document Room",
+        "group": "d0f6d576f8c1c2ba",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "<font size=3.5>Confidential Document Room",
+        "tooltip": "Summery of CDR",
+        "color": "Black",
+        "bgcolor": "White",
+        "className": "C_D_R",
+        "icon": "",
+        "payload": "{ \"tab\": \"Confidential Document Room\" }",
+        "payloadType": "json",
+        "topic": "cdr",
+        "topicType": "msg",
+        "x": 420,
+        "y": 1320,
+        "wires": [
+            [
+                "7fecfb3a2c796479"
+            ]
+        ]
+    },
+    {
+        "id": "299165f7ed05582b",
+        "type": "ui_chart",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "group": "d0f6d576f8c1c2ba",
+        "order": 9,
+        "width": 5,
+        "height": 4,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "50",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#4ddf3a",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 790,
+        "y": 1580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f575134bf9390cb6",
+        "type": "ui_gauge",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "group": "d0f6d576f8c1c2ba",
+        "order": 6,
+        "width": 5,
+        "height": 4,
+        "gtype": "compass",
+        "title": "",
+        "label": "Psi",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "40",
+        "className": "",
+        "x": 800,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "158070acc59de2cc",
+        "type": "ui_text",
+        "z": "09e8989193d87a0e",
+        "group": "d0f6d576f8c1c2ba",
+        "order": 3,
+        "width": 5,
+        "height": 1,
+        "name": "Pressure Measuring System",
+        "label": "<font size=3.5>Flow Pressure",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "x": 1000,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "a97352d258755352",
+        "type": "ui_ui_control",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "events": "all",
+        "x": 640,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7fecfb3a2c796479",
+        "type": "ui_ui_control",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "events": "all",
+        "x": 640,
+        "y": 1320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "95fa51c0655ad09c",
+        "type": "mqtt in",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "topic": "G6C/CCC/LOCKDOWN",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "f02b86421d01e2b2",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 620,
+        "wires": [
+            [
+                "06e10d09dcf74776"
+            ]
+        ]
+    },
+    {
+        "id": "1e00a58a705d88ee",
+        "type": "mqtt in",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "topic": "G6C/CCC/LOCKDOWN_OFF",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "f02b86421d01e2b2",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 700,
+        "wires": [
+            [
+                "34d6a2830ee143b7"
+            ]
+        ]
+    },
+    {
+        "id": "689570ad0c29c8f5",
+        "type": "ui_text",
+        "z": "09e8989193d87a0e",
+        "group": "6e84f5d46f9a53ff",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Lockdown status | CDR",
+        "label": "",
+        "format": "<font color='red'>{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 950,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "50091935bd3939e7",
+        "type": "ui_text",
+        "z": "09e8989193d87a0e",
+        "group": "ae64a7ccf4ad4936",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "Lockdown status | PO",
+        "label": "",
+        "format": "<font color='red'>{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1120,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "aa783783f10f0764",
+        "type": "ui_gauge",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "group": "bd4c929b10a619f0",
+        "order": 7,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "",
+        "label": "Dgrees Celcius",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#e5e826",
+            "#22c94c",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "30",
+        "className": "",
+        "x": 790,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "d35be00d89df7626",
+        "type": "ui_chart",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "group": "bd4c929b10a619f0",
+        "order": 8,
+        "width": 8,
+        "height": 4,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "50",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 790,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1c7e3e3d23541274",
+        "type": "ui_text",
+        "z": "09e8989193d87a0e",
+        "group": "bd4c929b10a619f0",
+        "order": 2,
+        "width": 10,
+        "height": 1,
+        "name": "",
+        "label": "",
+        "format": "<font size=4.5>Temperature Measuring System",
+        "layout": "col-center",
+        "className": "",
+        "x": 930,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "d03a7cd3a05426f8",
+        "type": "ui_text",
+        "z": "09e8989193d87a0e",
+        "group": "bd4c929b10a619f0",
+        "order": 23,
+        "width": 20,
+        "height": 1,
+        "name": "Temperature Status",
+        "label": "<font size = 4>Temperature Status  :  ",
+        "format": "<font color='red'>{{msg.payload}}</font>",
+        "layout": "row-spread",
+        "className": "Door",
+        "x": 990,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "fcdddad86543cb2a",
+        "type": "ui_toast",
+        "z": "09e8989193d87a0e",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "Notification",
+        "topic": "",
+        "name": "Fire | ALERT",
+        "x": 970,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6c7317a05e8f80be",
+        "type": "function",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "func": "if (msg.payload==\"True\" ){\n msg.payload=\"FIRE ALERT | PRESIDENT'S OFFICE!\";\n return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 220,
+        "wires": [
+            [
+                "fcdddad86543cb2a",
+                "d03a7cd3a05426f8"
+            ]
+        ]
+    },
+    {
+        "id": "3165c2dac80c5f1e",
+        "type": "ui_text",
+        "z": "09e8989193d87a0e",
+        "group": "bd4c929b10a619f0",
+        "order": 20,
+        "width": 20,
+        "height": 1,
+        "name": "Door Lock Status",
+        "label": "<font size = 4>Door Lock Status  :  ",
+        "format": "<font color='red'>{{msg.payload}}</font>",
+        "layout": "row-spread",
+        "className": "Door",
+        "x": 990,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "03446ecbcac65150",
+        "type": "function",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "func": "if (msg.payload==\"True\" ){\n msg.payload=\"Unlocked\";\n return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 340,
+        "wires": [
+            [
+                "3821276922acf261",
+                "3165c2dac80c5f1e"
+            ]
+        ]
+    },
+    {
+        "id": "3821276922acf261",
+        "type": "ui_toast",
+        "z": "09e8989193d87a0e",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "Notification",
+        "topic": "",
+        "name": "Door | ALERT",
+        "x": 980,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9b277eaa1638c96a",
+        "type": "split",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 390,
+        "y": 140,
+        "wires": [
+            [
+                "b9d43e693f70eb8b"
+            ]
+        ]
+    },
+    {
+        "id": "b9d43e693f70eb8b",
+        "type": "switch",
+        "z": "09e8989193d87a0e",
+        "name": "Switch",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "index",
+                "v": "0",
+                "vt": "num",
+                "v2": "0",
+                "v2t": "num"
+            },
+            {
+                "t": "index",
+                "v": "1",
+                "vt": "num",
+                "v2": "1",
+                "v2t": "num"
+            },
+            {
+                "t": "index",
+                "v": "2",
+                "vt": "num",
+                "v2": "2",
+                "v2t": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 550,
+        "y": 140,
+        "wires": [
+            [
+                "aa783783f10f0764",
+                "d35be00d89df7626"
+            ],
+            [
+                "6c7317a05e8f80be"
+            ],
+            [
+                "03446ecbcac65150"
+            ]
+        ]
+    },
+    {
+        "id": "43e1f590d1f3142b",
+        "type": "switch",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "index",
+                "v": "0",
+                "vt": "num",
+                "v2": "0",
+                "v2t": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 510,
+        "y": 1100,
+        "wires": [
+            [
+                "4a5099a9ffe337de",
+                "a883aea78fc716b8",
+                "65a0358ad32e2457"
+            ]
+        ]
+    },
+    {
+        "id": "f0d31b036319076e",
+        "type": "split",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 380,
+        "y": 1100,
+        "wires": [
+            [
+                "43e1f590d1f3142b"
+            ]
+        ]
+    },
+    {
+        "id": "00bff5f146be7a76",
+        "type": "mqtt in",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "topic": "G6B/PO/DATA",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "f02b86421d01e2b2",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 1100,
+        "wires": [
+            [
+                "f0d31b036319076e"
+            ]
+        ]
+    },
+    {
+        "id": "08cf884e188ad95e",
+        "type": "ui_audio",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "group": "bd4c929b10a619f0",
+        "voice": "",
+        "always": "",
+        "x": 900,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "7db520a32dd99fff",
+        "type": "ui_audio",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "group": "bd4c929b10a619f0",
+        "voice": "",
+        "always": "",
+        "x": 900,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "a1316e8e1fe7fd4e",
+        "type": "mqtt in",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "topic": "G6A/CDR/DATA",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "f02b86421d01e2b2",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 80,
+        "y": 1520,
+        "wires": [
+            [
+                "8a922871f49fd8e9"
+            ]
+        ]
+    },
+    {
+        "id": "8a922871f49fd8e9",
+        "type": "split",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 260,
+        "y": 1520,
+        "wires": [
+            [
+                "98eca68c6e08d2a6"
+            ]
+        ]
+    },
+    {
+        "id": "98eca68c6e08d2a6",
+        "type": "switch",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "index",
+                "v": "0",
+                "vt": "num",
+                "v2": "0",
+                "v2t": "num"
+            },
+            {
+                "t": "index",
+                "v": "1",
+                "vt": "num",
+                "v2": "1",
+                "v2t": "num"
+            },
+            {
+                "t": "index",
+                "v": "2",
+                "vt": "num",
+                "v2": "2",
+                "v2t": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 390,
+        "y": 1520,
+        "wires": [
+            [
+                "f0a487863fcb5684",
+                "2265ca1522e9ac77",
+                "fe730ea1387af2ee"
+            ],
+            [
+                "bd7443c1c7f1c7e7"
+            ],
+            [
+                "9182fd14a7ce3773",
+                "f470dab1ed817e9e"
+            ]
+        ]
+    },
+    {
+        "id": "9182fd14a7ce3773",
+        "type": "ui_chart",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "group": "d0f6d576f8c1c2ba",
+        "order": 10,
+        "width": 5,
+        "height": 4,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "10",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#eb6f0a",
+            "#aec7e8",
+            "#0f97ff",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 630,
+        "y": 1740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f470dab1ed817e9e",
+        "type": "ui_gauge",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "group": "d0f6d576f8c1c2ba",
+        "order": 7,
+        "width": 5,
+        "height": 4,
+        "gtype": "donut",
+        "title": "",
+        "label": "Lux",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "10",
+        "colors": [
+            "#00b500",
+            "#e6d200",
+            "#ca3838"
+        ],
+        "seg1": "2",
+        "seg2": "7",
+        "className": "",
+        "x": 630,
+        "y": 1780,
+        "wires": []
+    },
+    {
+        "id": "de78a18946118944",
+        "type": "ui_text",
+        "z": "09e8989193d87a0e",
+        "group": "d0f6d576f8c1c2ba",
+        "order": 4,
+        "width": 5,
+        "height": 1,
+        "name": "Light intensity Measuring System",
+        "label": "<font size=3.5>Light Intensity",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "x": 860,
+        "y": 1760,
+        "wires": []
+    },
+    {
+        "id": "557fafb1725114d1",
+        "type": "ui_template",
+        "z": "09e8989193d87a0e",
+        "group": "bd4c929b10a619f0",
+        "name": "",
+        "order": 25,
+        "width": 0,
+        "height": 0,
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 730,
+        "y": 1920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bd7443c1c7f1c7e7",
+        "type": "function",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "func": "if (msg.payload==\"Pressed\" ){\n msg.payload=\"10\";\n \n}else {\n    msg.payload=\"0\"\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 1600,
+        "wires": [
+            [
+                "f575134bf9390cb6",
+                "299165f7ed05582b"
+            ]
+        ]
+    },
+    {
+        "id": "f62f683cbc9113d1",
+        "type": "inject",
+        "z": "09e8989193d87a0e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Pressed",
+        "payloadType": "str",
+        "x": 650,
+        "y": 1660,
+        "wires": [
+            [
+                "bd7443c1c7f1c7e7"
+            ]
+        ]
+    },
+    {
+        "id": "8aaec7b2359cb810",
+        "type": "comment",
+        "z": "09e8989193d87a0e",
+        "name": "Central Control Room",
+        "info": "",
+        "x": 670,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "98923e9d7fb22061",
+        "type": "comment",
+        "z": "09e8989193d87a0e",
+        "name": "Getting Data and splitting",
+        "info": "",
+        "x": 290,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "8208b2c24bd1cbbf",
+        "type": "debug",
+        "z": "53695aa34af82441",
+        "name": "Temp_A",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "f2200e51bdfbf632",
+        "type": "inject",
+        "z": "53695aa34af82441",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "25",
+        "payloadType": "str",
+        "x": 770,
+        "y": 100,
+        "wires": [
+            [
+                "8208b2c24bd1cbbf",
+                "558fbe757d27e54b"
+            ]
+        ]
+    },
+    {
+        "id": "558fbe757d27e54b",
+        "type": "ui_gauge",
+        "z": "53695aa34af82441",
+        "name": "",
+        "group": "aa95d411e3540769",
+        "order": 3,
+        "width": 5,
+        "height": 4,
+        "gtype": "gage",
+        "title": "",
+        "label": "Dgrees Celcius",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "80",
+        "colors": [
+            "#ede735",
+            "#00e60f",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "40",
+        "className": "",
+        "x": 1050,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "5f598ac628ab3dfa",
+        "type": "ui_chart",
+        "z": "53695aa34af82441",
+        "name": "",
+        "group": "aa95d411e3540769",
+        "order": 12,
+        "width": 5,
+        "height": 4,
+        "label": "",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "80",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1050,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8d61d47b49e83868",
+        "type": "ui_chart",
+        "z": "53695aa34af82441",
+        "name": "",
+        "group": "26886c0f74f50cdc",
+        "order": 4,
+        "width": 5,
+        "height": 4,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "50",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#47db29",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1190,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5a8fca448ad78bf4",
+        "type": "ui_gauge",
+        "z": "53695aa34af82441",
+        "name": "",
+        "group": "26886c0f74f50cdc",
+        "order": 2,
+        "width": 7,
+        "height": 4,
+        "gtype": "compass",
+        "title": "",
+        "label": "Psi",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "40",
+        "className": "",
+        "x": 1200,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "4eb4e97252026487",
+        "type": "ui_text",
+        "z": "53695aa34af82441",
+        "group": "26886c0f74f50cdc",
+        "order": 1,
+        "width": 7,
+        "height": 1,
+        "name": "Pressure Measuring System",
+        "label": "",
+        "format": "<font size=4.5>Flow Pressure Measuring System",
+        "layout": "col-center",
+        "className": "",
+        "x": 1440,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "cf59463f2987da9d",
+        "type": "ui_chart",
+        "z": "53695aa34af82441",
+        "name": "",
+        "group": "81870d1085a881fc",
+        "order": 12,
+        "width": 5,
+        "height": 4,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "10",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#e79523",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1050,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "171dcceda1cc28b7",
+        "type": "ui_gauge",
+        "z": "53695aa34af82441",
+        "name": "",
+        "group": "81870d1085a881fc",
+        "order": 3,
+        "width": 5,
+        "height": 4,
+        "gtype": "donut",
+        "title": "",
+        "label": "Lux",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "10",
+        "colors": [
+            "#00b500",
+            "#e6d200",
+            "#ca3838"
+        ],
+        "seg1": "2",
+        "seg2": "7",
+        "className": "",
+        "x": 1050,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "01d3a9cafc0d944f",
+        "type": "ui_text",
+        "z": "53695aa34af82441",
+        "group": "81870d1085a881fc",
+        "order": 1,
+        "width": 7,
+        "height": 1,
+        "name": "Light intensity Measuring System",
+        "label": "",
+        "format": "<font size=4.5>Light Intensity Measuring System",
+        "layout": "col-center",
+        "className": "",
+        "x": 1280,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "acde82d6f1d7a2d1",
+        "type": "ui_text",
+        "z": "53695aa34af82441",
+        "group": "aa95d411e3540769",
+        "order": 1,
+        "width": 7,
+        "height": 1,
+        "name": "Temperature Measuring System",
+        "label": "",
+        "format": "<font size=4.5>Temperature Measuring System",
+        "layout": "col-center",
+        "className": "",
+        "x": 1270,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "85ef47e67cf9e579",
+        "type": "debug",
+        "z": "53695aa34af82441",
+        "name": "Door_B",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "09eced0f5f3978d1",
+        "type": "ui_text",
+        "z": "53695aa34af82441",
+        "group": "6e84f5d46f9a53ff",
+        "order": 3,
+        "width": 20,
+        "height": 1,
+        "name": "Door Lock Status",
+        "label": "<font size = 4>Door Lock Status  :  ",
+        "format": "<font color='red'>{{msg.payload}}</font>",
+        "layout": "row-spread",
+        "className": "Door",
+        "x": 1090,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "36295fc07ba2bb89",
+        "type": "ui_text",
+        "z": "53695aa34af82441",
+        "group": "6e84f5d46f9a53ff",
+        "order": 9,
+        "width": 20,
+        "height": 1,
+        "name": "Temperature Status",
+        "label": "<font size = 4>Temperature Status  :  ",
+        "format": "<font color='red'>{{msg.payload}}</font>",
+        "layout": "row-spread",
+        "className": "Door",
+        "x": 1090,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "a4dbd18dee836a03",
+        "type": "ui_toast",
+        "z": "53695aa34af82441",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "Notification",
+        "topic": "ALERT",
+        "name": "Fire | ALERT",
+        "x": 1230,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f9c72cf0ae09c1d7",
+        "type": "function",
+        "z": "53695aa34af82441",
+        "name": "",
+        "func": "if (msg.payload==\"Fire Alert\" ){\n msg.payload=\"FIRE ALERT | CONFIDENTIAL DOCUMENT ROOM!\";\n return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 760,
+        "wires": [
+            [
+                "a4dbd18dee836a03"
+            ]
+        ]
+    },
+    {
+        "id": "b5fa2fa663d0ebc8",
+        "type": "ui_text",
+        "z": "53695aa34af82441",
+        "group": "6e84f5d46f9a53ff",
+        "order": 12,
+        "width": 20,
+        "height": 1,
+        "name": "LIght Intensity Status",
+        "label": "<font size = 4>LIght Intensity Status  :  ",
+        "format": "<font color='red'>{{msg.payload}}</font>",
+        "layout": "row-spread",
+        "className": "Door",
+        "x": 1100,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "6a09347e7dd89a4b",
+        "type": "ui_toast",
+        "z": "53695aa34af82441",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "Notification",
+        "topic": "ALERT",
+        "name": "Light | ALERT",
+        "x": 1240,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6829c729bdaab11b",
+        "type": "function",
+        "z": "53695aa34af82441",
+        "name": "",
+        "func": "if (msg.payload==\"Attention Required\" ){\n msg.payload=\"ALERT | LIGHT INTENSITY HAS CHANGED | CONFIDENTIAL DOCUMENT ROOM!\";\n return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 900,
+        "wires": [
+            [
+                "6a09347e7dd89a4b"
+            ]
+        ]
+    },
+    {
+        "id": "4cfbdcf12b1eaf8d",
+        "type": "mqtt in",
+        "z": "53695aa34af82441",
+        "name": "",
+        "topic": "G6A/CDR/DATA",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "f02b86421d01e2b2",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 360,
+        "wires": [
+            [
+                "376e9c6857cf1282",
+                "faef52ba07d667d6"
+            ]
+        ]
+    },
+    {
+        "id": "376e9c6857cf1282",
+        "type": "split",
+        "z": "53695aa34af82441",
+        "name": "",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 280,
+        "y": 360,
+        "wires": [
+            [
+                "1d4b2034b7d6adc8"
+            ]
+        ]
+    },
+    {
+        "id": "1d4b2034b7d6adc8",
+        "type": "switch",
+        "z": "53695aa34af82441",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "index",
+                "v": "0",
+                "vt": "num",
+                "v2": "0",
+                "v2t": "num"
+            },
+            {
+                "t": "index",
+                "v": "1",
+                "vt": "num",
+                "v2": "1",
+                "v2t": "num"
+            },
+            {
+                "t": "index",
+                "v": "2",
+                "vt": "num",
+                "v2": "2",
+                "v2t": "num"
+            },
+            {
+                "t": "index",
+                "v": "3",
+                "vt": "num",
+                "v2": "3",
+                "v2t": "num"
+            },
+            {
+                "t": "index",
+                "v": "4",
+                "vt": "num",
+                "v2": "4",
+                "v2t": "num"
+            },
+            {
+                "t": "index",
+                "v": "5",
+                "vt": "num",
+                "v2": "5",
+                "v2t": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 6,
+        "x": 410,
+        "y": 360,
+        "wires": [
+            [
+                "5f598ac628ab3dfa",
+                "558fbe757d27e54b",
+                "8208b2c24bd1cbbf"
+            ],
+            [
+                "5c74edda87a0f5f9",
+                "5bc7a859885656f7",
+                "cbc9a4e72a5004b8"
+            ],
+            [
+                "cf59463f2987da9d",
+                "171dcceda1cc28b7"
+            ],
+            [
+                "09eced0f5f3978d1",
+                "85ef47e67cf9e579"
+            ],
+            [
+                "36295fc07ba2bb89",
+                "f9c72cf0ae09c1d7"
+            ],
+            [
+                "b5fa2fa663d0ebc8",
+                "6829c729bdaab11b"
+            ]
+        ]
+    },
+    {
+        "id": "e33c3d0e1d54730f",
+        "type": "ui_text",
+        "z": "53695aa34af82441",
+        "group": "6e84f5d46f9a53ff",
+        "order": 6,
+        "width": 20,
+        "height": 1,
+        "name": "Pressure Status",
+        "label": "<font size = 4>Pressure Status  :  ",
+        "format": "<font color='red'>{{msg.payload}}</font>",
+        "layout": "row-spread",
+        "className": "Door",
+        "x": 1220,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "5c74edda87a0f5f9",
+        "type": "function",
+        "z": "53695aa34af82441",
+        "name": "",
+        "func": "if (msg.payload==\"Pressed\" ){\n msg.payload=\"ALERT| UNAUTHORIZED ENTRY DETECTED | CONFIDENTIAL DOCUMENT ROOM!\";\n return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 320,
+        "wires": [
+            [
+                "1028dc4f63727cd0"
+            ]
+        ]
+    },
+    {
+        "id": "5bc7a859885656f7",
+        "type": "function",
+        "z": "53695aa34af82441",
+        "name": "",
+        "func": "if (msg.payload==\"Pressed\" ){\n msg.payload=\"Unauthorized Entry Detected\";\n \n}else {\n    msg.payload=\"Safe\"\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 360,
+        "wires": [
+            [
+                "e33c3d0e1d54730f"
+            ]
+        ]
+    },
+    {
+        "id": "1028dc4f63727cd0",
+        "type": "ui_toast",
+        "z": "53695aa34af82441",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "Notification",
+        "topic": "ALERT",
+        "name": "PRESSURE | ALERT",
+        "x": 1240.800048828125,
+        "y": 319.20001220703125,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f0a8656d8103f026",
+        "type": "ui_template",
+        "z": "53695aa34af82441",
+        "group": "6e84f5d46f9a53ff",
+        "name": "",
+        "order": 14,
+        "width": 0,
+        "height": 0,
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 130,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "faef52ba07d667d6",
+        "type": "debug",
+        "z": "53695aa34af82441",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 300,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "cbc9a4e72a5004b8",
+        "type": "function",
+        "z": "53695aa34af82441",
+        "name": "",
+        "func": "if (msg.payload==\"Pressed\" ){\n msg.payload=\"10\";\n \n}else {\n    msg.payload=\"0\"\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 260,
+        "wires": [
+            [
+                "8d61d47b49e83868",
+                "5a8fca448ad78bf4"
+            ]
+        ]
+    },
+    {
+        "id": "87aa7d56674169ce",
+        "type": "inject",
+        "z": "53695aa34af82441",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Pressed",
+        "payloadType": "str",
+        "x": 920,
+        "y": 240,
+        "wires": [
+            [
+                "cbc9a4e72a5004b8"
+            ]
+        ]
+    }
+]
